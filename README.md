@@ -4,3 +4,5 @@ DX_AUTOFISH
 
 
 - กำลังทำเพิ่มได้หลายโซนรออัพเดท
+
+![Uploading DX_AUTOFISH.png…]()
