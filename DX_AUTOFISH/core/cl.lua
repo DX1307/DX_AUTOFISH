@@ -1,5 +1,5 @@
-RegisterFontFile('XenonFont')
-fontId = RegisterFontId('XenonFont')
+RegisterFontFile('font4thai')
+fontId = RegisterFontId('font4thai')
 
 ESX						= nil
 local useitem = false
