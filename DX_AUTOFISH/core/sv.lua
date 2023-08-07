@@ -4,18 +4,18 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 ESX.RegisterUsableItem(Config.Itemuse, function(source) --ชุป
 	local xPlayer = ESX.GetPlayerFromId(source)
-    TriggerClientEvent('KT_pussyfuck:USEITEM',source)
+    TriggerClientEvent('DX-AutoFish:USEITEM',source)
 	Citizen.Wait(10000)
 end)
 
-RegisterServerEvent('KT_pussyfuck:ADD')
-AddEventHandler('KT_pussyfuck:ADD', function()
+RegisterServerEvent('DX-AutoFish:ADD')
+AddEventHandler('DX-AutoFish:ADD', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	local xItem = xPlayer.getInventoryItem(Config.Additem)
 	local xZItem = xPlayer.getInventoryItem(Config.Removeitem)
 	if xItem.limit ~= -1 and (xItem.count + 1) > xItem.limit and xZItem.count <= 0 then 
-		TriggerClientEvent('KT_pussyfuck:CANCLE',source)
+		TriggerClientEvent('DX-AutoFish:CANCLE',source)
 	else
 		xPlayer.addInventoryItem(Config.Additem, 5)
 		xPlayer.removeInventoryItem(Config.Removeitem, 1)
