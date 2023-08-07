@@ -1,6 +1,6 @@
 fx_version "adamant"
 game "gta5"
-version "1.0 Beta"
+version "1.1 FixBug"
 description 'Developed by DX#9190'
 
 client_scripts {
