@@ -42,8 +42,8 @@ Citizen.CreateThread(function()
 	end
 end)
 
-RegisterNetEvent('KT_pussyfuck:CANCLE')
-AddEventHandler('KT_pussyfuck:CANCLE', function()
+RegisterNetEvent('DX-AutoFish:CANCLE')
+AddEventHandler('DX-AutoFish:CANCLE', function()
 	CancelFishing()
 	exports['okokNotify']:Alert("AFK fishing", "เหยื่อของท่านหมดหรือของท่านเต็ม", 5000, 'error')
 	ClearPedTasksImmediately(GetPlayerPed(-1))
@@ -61,8 +61,8 @@ RegisterCommand('die', function()
 	SetEntityHealth(PlayerPedId(), 0)
 end, restricted)
 
-RegisterNetEvent('KT_pussyfuck:USEITEM')
-AddEventHandler('KT_pussyfuck:USEITEM', function(confirm)local Zonefish = false
+RegisterNetEvent('DX-AutoFish:USEITEM')
+AddEventHandler('DX-AutoFish:USEITEM', function(confirm)local Zonefish = false
 	if GetDistanceBetweenCoords(vector3(Config.Zonefish.x, Config.Zonefish.y, Config.Zonefish.z), GetEntityCoords(PlayerPedId()), true) < Config.range then
 		startgame = confirm
 		Startfish()
@@ -102,7 +102,7 @@ Citizen.CreateThread(function()
 			end
 
 			if getitem == 0 then
-				TriggerServerEvent("KT_pussyfuck:ADD")
+				TriggerServerEvent("DX-AutoFish:ADD")
 				getitem = getitemtime
 				removeitem = removeitem - 1
 			elseif removeitem == 0 then
