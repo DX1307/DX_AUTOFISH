@@ -1,13 +1,14 @@
 
-Config						= {}
+Config = {}
 
 Config.Itemuse = "fishingrod"        -- คันเบ็ด
-Config.Additem = "catfish"           -- ของที่ได้เสมอ
 Config.Removeitem = "fishingbait"    -- เหยื่อตกปลา
-Config.TimetoAdd = 500                -- เวลาที่ได้ของ
+Config.TimetoAdd = 10                -- เวลาที่ได้ของ
 
 Config.Zonefish = {x = 1299.88, y = 4219.34, z = 33.908} -- พิกัดโซนตกปลา  [ต้องตั้งให้ตรงกับ Blip,x,y,z]
 Config.range = 50                    -- โซนระยะตกปลา
+
+Config.ShowToolTip = true
 
 Config.blip = {
     [1] = {
