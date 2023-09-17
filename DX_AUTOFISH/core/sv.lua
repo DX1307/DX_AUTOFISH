@@ -2,8 +2,7 @@ ESX = exports['es_extended']:getSharedObject()
 
 ESX.RegisterUsableItem(Config.Itemuse, function(source)
 	local xPlayer = ESX.GetPlayerFromId(source)
-    TriggerClientEvent('DX-AutoFish:USEITEM',source)
-	Citizen.Wait(10000)
+    	TriggerClientEvent('DX-AutoFish:USEITEM',source)
 end)
 
 
